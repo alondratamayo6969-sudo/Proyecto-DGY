@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moda en Línea</title>
+
+  <style>
+  :root {
+  --black: #000000;
+  --golden: #EABE3F;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--golden);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2em;
+}
+
+h1 {
+  color: var(--golden);
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+a.inicio {
+  color: var(--golden);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.inicio:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  background-color: #111;
+  border: 2px solid var(--golden);
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 0 15px rgba(234, 190, 63, 0.3);
+}
+
+.images-and-sizes img {
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid var(--golden);
+}
+
+.pick {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.tallas {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.tallas span {
+  border: 1px solid var(--golden);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.tallas span:hover {
+  background: var(--golden);
+  color: var(--black);
+}
+
+.product h2 {
+  color: var(--golden);
+  margin-bottom: 0.3em;
+}
+
+.product h3 {
+  color: var(--golden);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.description {
+  color: var(--white);
+  font-size: 0.9em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+button.add {
+  background: var(--golden);
+  color: var(--black);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.add:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+a {
+    color: var(--golden);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: var(--white);
+text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FFD700;
+  color: black;
+}
+
+.colores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.colores span {
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #FFD700;
+}
+
+.colores span:hover {
+  background-color: #FFD700;
+  color: black;
+  transform: scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+  <h1>Destacados</h1>
+  <nav>
+  <a href="index.html" class="inicio">Inicio</a>
+  <a href="https://alondratamayo6969-bvtzs.wordpress.com/?_gl=1*t3ymjt*_gcl_au*NjQ3MTgzNDg4LjE3NTkyNTEyMjg"
+  target="_blank">Blog</a>
+
+  </nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Vestido Rojo Versace Medusa" src="imagen.webp">
+
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige talla</p>
+      <div class="tallas">
+        <span>XS</span>
+        <span>S</span>
+        <span>M</span>
+        <span>L</span>
+        <span>XL</span>
+        <span>XXL</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Vestido rojo Versace</h2>
+      <h3>$30000</h3>
+      <p class="description">
+       Vestido rojo elegante para mujer. Este vestido de noche presenta drapeados.
+      El diseño sin mangas resalta los detalles metálicos Medusa '95 en un hombro.</p>
+      <button class="add">Añadir al carrito</button>
+
+    </div>
+  </div>
+</body>
+</html>
+
+ </nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Bolso Christian Dior" src="https://assets.christiandior.com/is/image/diorprod/M0565OEDOM941_E03?$default_GHC$&crop=368,391,1209,1400&bfc=on&qlt=85">
+
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige color</p>
+      <div class="colores">
+        <span>Blanco</span>
+        <span>Negro</span>
+        <span>Verde</span>
+        <span>Rojo</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Bolso Christian Dior</h2>
+      <h3>$60000</h3>
+      <p class="description">
+      Este bolso Lady D-Lite combina con una elegancia clásica, 
+      asi como la modernidad de la actualidad. Esta silueta presenta un bordado integral
+      del motivo Toile de Jouy Reverse azul, una nueva versión del distintivo estampado
+      de la Maison con un juego de colores invertidos. Incluye una firma Christian Dior 
+      Paris en la parte delantera y está adornado con gruesos charms D.I.O.R. de metal 
+      dorado pálido.</p>
+      <button class="add">Añadir al carrito</button>
+    </div>
+  </div>
+</body>
+</html>
+
+    </div>
+  </div>
+</body>
+</html></nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Perfume Prada" src="https://www.theperfumecloset.co.uk/wp-content/uploads/Prada-Paradoxe-Intense-Eau-de-Parfum-the-new-feminine-intensity-by-Prada.-This-feminine-fragrance-explores-strength-through-the-lens-of-delicacy.-The-result-is-the-intense-signature-of-a-woman-in-3.png">
+
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige cantidad</p>
+      <div class="colores">
+        <span>25ml</span>
+        <span>90ml</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Perfume Prada</h2>
+      <h3>$6000</h3>
+      <p class="description">
+      Este es un perfume floral ambarino que reinventa la frescura con una extracción
+      de cogollos de neroli para capturar el aroma fresco de la flor, la sensualidad
+      con ámbar bioconvertido para revelar una calidez vibrante y la intensidad a
+      través de una revolucionaria molécula de almizcle para una estela intensa pero 
+      sutil.</p>
+      <button class="add">Añadir al carrito</button>
+    </div>
+  </div>
+</body>
+</html>
+
+</div>
+  </div>
+</body>
+</html></nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Boloso Fendi" src="https://img.giglio.com/images/prodZoom/320053.107_1.jpg">
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige color</p>
+      <div class="colores">
+        <span>Negro</span>
+        <span>Blanco</span>
+        <span>Café</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Bolso Fendi</h2>
+      <h3>$57000</h3>
+      <p class="description">
+      Bolso shopper Sunshine tamaño pequeño confeccionado en piel blanca,
+      adornado con inscripción FENDI ROMA termoestampada y equipado con asas rígidas 
+      de plexiglás efecto carey.
+      Cuenta con un amplio compartimento interior forrado, ribetes de piel tono 
+      sobre tono y accesorios metálicos con acabado dorado.
+      Se puede llevar en la mano o al hombro gracias a las dos asas y a la bandolera
+      extraíble.
+      Hecho en Italia</p>
+      <button class="add">Añadir al carrito</button>
+    </div>
+  </div>
+</body>
+</html>
+
+</div>
+  </div>
+</body>
+</html></nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Boloso Fendi" src="https://www.kewaybags.com/bolsos-segunda-mano/fotos/bolso-fendi-1690462377.jpg">
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige color</p>
+      <div class="colores">
+        <span>Negro</span>
+        <span>Blanco</span>
+        <span>Café</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Bolso Fendi</h2>
+      <h3>$80000</h3>
+      <p class="description">
+      El bolso tiene un diseño con un patrón de letras "F" en negro y gris, adornadas
+      con pequeños círculos de strass o lentejuelas plateadas que le dan un toque
+      de brillo y elegancia.</p>
+      <button class="add">Añadir al carrito</button>
+     </div>
+   </div>
+  </body>
+  </html>
+
+ </div>
+  </div>
+</body>
+</html></nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Boloso Louis Vuitton" src="https://es.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bolso-nano-speedy--M81085_PM2_Front%20view.png?wid=1090&hei=1090">
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige color</p>
+      <div class="colores">
+        <span>Negro</span>
+        <span>Café</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Bolso Louis Vuitton</h2>
+      <h3>$80000</h3>
+      <p class="description">
+      La compacta bolsa Nano Speedy, confeccionada en Canvas Monograma, es ideal para llevar lo esencial.
+      El elegante diseño se realza con detalles en piel natural envejecida y piezas metálicas de color
+      dorado. Este modelo se completa con dos asas y una correa ajustable y extraíble que permite
+      cargarla de distintas formas.</p>
+      <button class="add">Añadir al carrito</button>
+     </div>
+   </div>
+  </body>
+  </html> 
+
+ </div>
+  </div>
+</body>
+</html></nav>
+  <div class="container">
+    <div class="images-and-sizes">
+      <img alt="Vestido Hermes" src="https://i.blogs.es/df27ee/00560m/450_1000.jpg">
+      <div class="slideshow-buttons">
+        <span></span>
+        <span class="focus"></span>
+        <span></span>
+      </div>
+
+      <p class="pick">Elige tala</p>
+      <div class="colores">
+        <span>XSS</span>
+        <span>S</span>
+        <span>M</span>
+        <span>G</span>
+        <span>XXL</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <h2>Vestido Hermes</h2>
+      <h3>$90000</h3>
+      <p class="description">
+      Vestido largo con numerosas transparencias, estampados y encajes, que dan un aire de camisón al
+      vestido. Un toque de lo más sugerente para deslumbrar en una velada elegante.</p>
+      <button class="add">Añadir al carrito</button>
+     </div>
+   </div>
+  </body>
+  </html> 
+  <footer>
+    <p> 2025 Moda en Línea | AYNP</p>
+  </footer>
